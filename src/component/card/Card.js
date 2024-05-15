@@ -44,7 +44,7 @@ function Card() {
               justifyContent: "center",
               backgroundColor: "#FFFFFF",
               padding: "8px",
-              margin: "5px",
+              margin: "20px",
               height: "90%",
             }}
           >
