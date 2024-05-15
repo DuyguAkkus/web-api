@@ -8,9 +8,8 @@ import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import MenuItem from "@mui/material/MenuItem";
-
+import Icon from "../../icon/Icon.png";
 import { IoChevronDownOutline } from "react-icons/io5";
-import SailingIcon from "@mui/icons-material/Sailing";
 
 const settings = ["Profile"];
 const userName = "Elongated Mask";
@@ -32,15 +31,18 @@ function ResponsiveAppBar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <SailingIcon
+          <div
             sx={{
-              display: { xs: "inline-flex", md: "flex" },
-              mr: 1,
-              fontSize: 50,
-              color: "#FFCC02",
-              marginLeft: "20px",
+              display: "inline-flex",
             }}
-          />
+          >
+            <img
+              src={Icon}
+              alt="Icon"
+              style={{ width: "70px", height: "32px" }}
+            />
+          </div>
+
           <Box sx={{ flexGrow: 1 }} />
 
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -55,8 +57,8 @@ function ResponsiveAppBar() {
               variant="body1"
               onClick={handleOpenUserMenu}
               sx={{ margin: 1, cursor: "pointer", color: "#FBFBFB" }}
-              fontWeight={550}
-              fontSize={"bold"}
+              fontWeight={"bold"}
+              fontSize={14}
             >
               {userName}
               <IconButton onClick={handleOpenUserMenu}>

@@ -52,15 +52,16 @@ function Card() {
               <Typography
                 variant="h6"
                 sx={{ color: "#5B067F" }}
-                fontWeight={"400"}
-                fontSize={"20px"}
+                fontWeight={"medium"}
+                fontSize={20}
               >
                 {post.title}
               </Typography>
               <Typography
                 variant="body1"
                 sx={{ color: "#938585" }}
-                fontSize={"14px"}
+                fontWeight={"regular"}
+                fontSize={13}
               >
                 {post.body}
               </Typography>
