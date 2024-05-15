@@ -1,4 +1,3 @@
-//
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Box, Typography, Grid } from "@mui/material";
@@ -46,11 +45,22 @@ function Card() {
               height: "100%",
             }}
           >
-            <Typography variant="h5" sx={{ color: "#8b008b" }}>
-              {post.title}
-            </Typography>
-            <Typography variant="body1" sx={{ color: "#696969" }}>
-              {post.body}
+            <Typography padding={"10px"}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#5B067F" }}
+                fontSize={"inter"}
+                fontWeight={"400"}
+              >
+                {post.title}
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ color: "#938585" }}
+                fontSize={"Poppins"}
+              >
+                {post.body}
+              </Typography>
             </Typography>
           </Box>
         </Grid>
