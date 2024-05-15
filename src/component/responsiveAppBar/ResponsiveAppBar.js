@@ -34,7 +34,7 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <SailingIcon
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: { xs: "inline-flex", md: "flex" },
               mr: 1,
               fontSize: 50,
               color: "#FFCC02",
