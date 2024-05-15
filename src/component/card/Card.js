@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Box, Typography, Grid } from "@mui/material";
-import "./CardStyle.css";
 
 function Card() {
   const [data, setData] = useState([]);
@@ -31,15 +30,19 @@ function Card() {
             height: "100vh",
           }}
         >
-          LOADİNG...
+          LOADING...
         </div>
       )}
 
       {data.map((post) => (
         <Grid item xs={10} sm={5} md={4} key={post.id}>
           <Box
-            className="card"
             sx={{
+              border: "1px solid #000",
+              borderRadius: "15px",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "#FFFFFF",
               padding: "10px",
               margin: "10px",
               height: "100%",
@@ -49,15 +52,15 @@ function Card() {
               <Typography
                 variant="h6"
                 sx={{ color: "#5B067F" }}
-                fontSize={"inter"}
                 fontWeight={"400"}
+                fontSize={"20px"}
               >
                 {post.title}
               </Typography>
               <Typography
                 variant="body1"
                 sx={{ color: "#938585" }}
-                fontSize={"Poppins"}
+                fontSize={"14px"}
               >
                 {post.body}
               </Typography>
