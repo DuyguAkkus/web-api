@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
             <img
               src={Icon}
               alt="Icon"
-              style={{ width: "70px", height: "32px" }}
+              style={{ width: "70px", height: "32px", paddingLeft: "20px" }}
             />
           </div>
 
