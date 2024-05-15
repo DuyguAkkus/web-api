@@ -53,7 +53,7 @@ function ResponsiveAppBar() {
             </IconButton>
             <Typography
               variant="body1"
-              disabled
+              onClick={handleOpenUserMenu}
               sx={{ margin: 1, cursor: "pointer", color: "#FBFBFB" }}
               fontWeight={550}
               fontSize={"bold"}
