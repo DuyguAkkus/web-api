@@ -43,9 +43,9 @@ function Card() {
               alignItems: "center",
               justifyContent: "center",
               backgroundColor: "#FFFFFF",
-              padding: "10px",
-              margin: "10px",
-              height: "100%",
+              padding: "8px",
+              margin: "5px",
+              height: "90%",
             }}
           >
             <Typography padding={"10px"}>
